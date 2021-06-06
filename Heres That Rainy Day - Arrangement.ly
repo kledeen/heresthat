@@ -31,7 +31,9 @@ mdecks = \chordmode {
 baseChords = \chordmode {
       g2:maj7 fis:min6 f:m6 bes:7.5+.9+ 
               es1:maj7 aes:maj7
-              a:min7.11 d:7 g:maj7 d2:min7 g:7.9-
+              a:min7.11 
+              a4:min7 d:7 a2:dim7
+              g1:maj7 d2:min7 g:7.9-
               c1:min7 c2:min7 f4:9+ f:7 bes2:maj7 e:9 ees1:maj7
               a:min7 a2:min7 es4:9 d:7 g2:maj7 e:min7 a:min7 d:7
 
@@ -70,13 +72,14 @@ melody =
                  \\
                  { b,2 a as  
                      <des ges>
-                     <g bes>2~ g2
+                     <g bes d>2~ g2
                      g2 f4 es
                  }
             >>
        
-            <c d>d4 d2 d4  fis a c b1 r
-            es2 es es4 g, as a d2 f,4 fis g2 fis4 g c c8 c c4 c8 c c4 e, f fis b1 r
+            <c d>d4 d2 d4  fis a c b1 
+            f'8  es d c b as g f
+           < es es'>2 < es es'> < es es'>4 g as a d2 f,4 fis g2 fis4 g c c8 c c4 c8 c c4 e, f fis b1 r
             d,4 d2d4 d f bes d d2 c4. b8 c1
             d,4 d2d4 d fis a c b1 r
             e4 e2 e4 e a, b c d2 fis,4 g a1 d,4 d2 d4 d fis a b g1 r
@@ -154,7 +157,7 @@ scoreSection =
   \new StaffGroup <<
 
     \new PianoStaff <<
-         \new ChordNames \mdecks
+         \new ChordNames \baseChords
         %  {
 %               g2:maj7 fis:min6 f:m6 bes:7.5+.9+ 
 %               es1:maj7 aes:maj7
