@@ -79,7 +79,22 @@ melody =
             <c d>4 d d2 <g, a d>4  <c d fis> <es fis a> <fis a c> 
             <e g b>1 
             <f f'>8  e' d c b as g f
-           < es es'>2 < es es'> < es es'>4 g as a d2 f,4 fis g2 fis4 g c c8 c c4 c8 c c4 e, f fis b1 r
+           < es es'>2 < es es'> < es es'>4 g as a 
+           <f d'>2 
+           <<
+                { f4 fis g2fis4 g 
+                  c c8 c c4 c8 c 
+                  c4 e, f fis
+                  <e b'>1
+                }
+                \\
+                { gis,2 bes2 d2 
+                  <c e>2 <des f>2 <dis fis>4 d des c
+                  b4 c des d
+                }
+           >>
+              
+             r1
             d,4 d2d4 d f bes d d2 c4. b8 c1
             d,4 d2d4 d fis a c b1 r
             e4 e2 e4 e a, b c d2 fis,4 g a1 d,4 d2 d4 d fis a b g1 r
@@ -122,9 +137,11 @@ pianoLH =
     c8 g' c c, bes g' c bes, 
     a f' e es d des c b 
     
-    bes2 e,
-    es1 a a2es'4 d 
-    g,2 
+    <bes a'>2 <e, d'>
+    <es d'>2 <b' a'>4 <bes as'>  
+    <a g'>2 <bes as'>  <b a'>4 <e fis> <es bes'> <d a'>
+    
+    <g, fis'> <a g'> <bes as'> <b a'> 
     
 
 
