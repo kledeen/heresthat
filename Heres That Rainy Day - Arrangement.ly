@@ -33,7 +33,7 @@ baseChords = \chordmode {
               es1:maj7 aes:maj7
               a:min7.11 
               a4:min7 d:7 a2:dim7
-              g1:maj7 d2:min7 g:7.9-
+              g1:maj7 d2:min7.5- g:7.9-
               c1:min7 c2:min7 f4:9+ f:7 bes2:maj7 e:9 ees1:maj7
               a:min7 a2:min7 es4:9 d:7 g2:maj7 e:min7 a:min7 d:7
 
@@ -65,20 +65,20 @@ melody =
        {
               <<
                  {  d4  d2 d4  d f bes d
-                    d2 c4. b8 c1
-                    
+                    d2 c4. b8 
+                    c2 f,4 es 
                  }
-                 
                  \\
-                 { b,2 a as  
-                     <des ges>
+                 { b2 a as  
+                     <des ges>4 <e gis>
                      <g bes d>2~ g2
-                     g2 f4 es
+                     g2 gis,
                  }
             >>
        
-            <c d>d4 d2 d4  fis a c b1 
-            f'8  es d c b as g f
+            <c d>4 d d2 <g, a d>4  <c d fis> <es fis a> <fis a c> 
+            <e g b>1 
+            <f f'>8  e' d c b as g f
            < es es'>2 < es es'> < es es'>4 g as a d2 f,4 fis g2 fis4 g c c8 c c4 c8 c c4 e, f fis b1 r
             d,4 d2d4 d f bes d d2 c4. b8 c1
             d,4 d2d4 d fis a c b1 r
@@ -110,10 +110,20 @@ pianoLH =
   {
     <g fis'>2 <fis e'> f  < bes as'>
     es,4 < bes'' f'>4 <a d>4. <g d'>8
-    <as es'>1
-    <a e' g> d2 fis4 a g1 d2 g
-    c,1 c2 f bes, e
-    es1 a, a2es'4 d 
+    <as es'>2  <e, d'>
+    <a e' g>2 <bes f' as> 
+    <c e>4 <fis a> <a c><c es> 
+    <<
+         {  d1 }
+         \\
+         {  b2~ b8 g fis e}
+    >>
+    d,4 <as'' c> g,8 f' es d 
+    c8 g' c c, bes g' c bes, 
+    a f' e es d des c b 
+    
+    bes2 e,
+    es1 a a2es'4 d 
     g,2 
     
 
