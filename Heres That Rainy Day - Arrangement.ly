@@ -6,8 +6,8 @@
    arranger = "Ken Ledeen"	
 }
 heresLyrics = \lyricmode  {
-                 May -- be I should have saved those left  --  o  --  ver dreams.
-                 Fun -- ny but here's that rain -- y day.
+                 May -- be  -- I _ should have saved those left  --  o  --  ver _ dreams. _ _ 
+                 Fun -- ny _ but here's that rain -- y day.
                  Here's that rain -- y day they told me a -- bout.
                  And I laughed at the thought that it might turn out this way.
                  
@@ -62,42 +62,46 @@ baseChords = \chordmode {
 melody =     
      
      \relative c'
-       {
-              <<
-                 {  d4  d2 d4  d f bes d
-                    d2 c4. b8 
-                    c2 f,4 es 
-                 }
-                 \\
-                 { b2 a as  
-                     <des ges>4 <e gis>
-                     <g bes d>2~ g2
-                     g2 gis,
-                 }
-            >>
-       
-            <c d>4 d d2 <g, a d>4  <c d fis> <es fis a> <fis a c> 
-            <e g b>1 
-            <f f'>8  e' d c b as g f
-           < es es'>2 < es es'> < es es'>4 g as a 
-           <f d'>2 
-           <<
-                { f4 fis g2fis4 g 
-                  c c8 c c4 c8 c 
-                  c4 e, f fis
-                  <e b'>1
-                }
-                \\
-                { gis,2 bes2 d2 
-                  <c e>2 <des f>2 <dis fis>4 d des c
-                  b4 c des d
-                }
-           >>
+       {       %     VOICE 1                      VOICE 2
+              << { d4  d2 d4 }     \\     { b2 a}                               >> 
+              << { d4 f bes d }     \\    { as,2 <des ges>2 }           >>
+               << { d'2 c4. b8 }    \\    { <f g>2~ g2}                    >>     
+              << {  c2 f,4 es }       \\   { g2 gis, }                           >>             
+              <<  {  d'4 d2 d4 }      \\     { c1 }                              >>
+              <<  { d4  fis a c}      \\     { <g, a >4  <c d > <es fis > <fis a > }      >> 
+              <<  { e 1 }                \\     { < g b>1 }                                               >> 
+            <<   {   }                     \\      { <f f'>8  e' d c b as g f }    >>
+            <<  {   es'2.es4 }          \\     { es,2. es4 }      >>           
+           <<  {  es'  g, as a  }      \\     { es }      >>
+           <<  { d'2  f,4 fis }         \\     { f2 gis,2 }      >> 
+           <<  {  g'2. fis8 g  }      \\     { bes,2 d2 }      >>
+           <<  { c'4 c8 c c4 c8 c}      \\     {<c, e>2  <des f>2 }      >>
+           <<  {  c'4 e, f fis  }      \\     { <dis fis>4 d des c }      >>
+           <<  { b'1  }      \\     { e, 1 }      >>
+           <<  {   }      \\     {   e'8 c b a as ges  f es}      >>
+           <<  { d4 d2 d4  }      \\     { b2 a }      >>
+            <<  { d4 f bes d   }      \\     { as,2 <des ges >}      >>      
+             <<  { d'2 c4. b8  }      \\     { }      >>    
+              <<  { c1  }      \\     {  }      >>
+              <<  {  d,4 d2d4  }      \\     {  }      >>
+              <<  {   d4 fis a c }      \\     {  }      >>
+              <<  {   b1 }      \\     {  }      >>   
+               <<  { r1  }      \\     {  }      >>
+               <<  {  e4 e2 e4 }      \\     {  }      >>
+               <<  {e a, b c   }      \\     {  }      >>
+               <<  { d2. fis,8 g   }      \\     {  }      >>  
+               <<  {  a1 }      \\     {  }      >>
+               <<  { d,4 d2 d4  }      \\     {  }      >>
+               <<  {  d fis a b }      \\     {  }      >>
+               <<  {  g1  }      \\     {  }      >>
+               <<  { r1  }      \\     {  }      >>
+               
+        
               
-             r1
-            d,4 d2d4 d f bes d d2 c4. b8 c1
-            d,4 d2d4 d fis a c b1 r
-            e4 e2 e4 e a, b c d2 fis,4 g a1 d,4 d2 d4 d fis a b g1 r
+             
+            
+            
+                 
        
   
    
@@ -124,7 +128,7 @@ pianoLH =
   \relative c
   {
     <g fis'>2 <fis e'> f  < bes as'>
-    es,4 < bes'' f'>4 <a d>4. <g d'>8
+    es,4 < bes'' f'>4 <a d>4. <as d>8
     <as es'>2  <e, d'>
     <a e' g>2 <bes f' as> 
     <c e>4 <fis a> <a c><c es> 
@@ -141,7 +145,10 @@ pianoLH =
     <es d'>2 <b' a'>4 <bes as'>  
     <a g'>2 <bes as'>  <b a'>4 <e fis> <es bes'> <d a'>
     
-    <g, fis'> <a g'> <bes as'> <b a'> 
+    <g, fis'> <a g'> <bes as'> <b a'>
+    <b' c e>2  <fis c' f>
+    fis4 g, e' fis,
+    es' f, <bes as'>2
     
 
 
@@ -215,8 +222,8 @@ scoreSection =
       } % end of bass staff
 
     >>
-    
-    \chords {       }
+    \addlyrics \heresLyrics 
+
     
 %NOTE:remove block comment below to include staff for separate Bass line
 %{
