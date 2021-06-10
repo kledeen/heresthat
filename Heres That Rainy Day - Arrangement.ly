@@ -63,32 +63,32 @@ melody =
      
      \relative c'
        {       %     VOICE 1                      VOICE 2
-              << { d4  d2 d4 }     \\     { b2 a}                               >> 
-              << { d4 f bes d }     \\    { as,2 <des ges>2 }           >>
-               << { d'2 c4. b8 }    \\    { <f g>2~ g2}                    >>     
-              << {  c2 f,4 es }       \\   { g2 gis, }                           >>             
-              <<  {  d'4 d2 d4 }      \\     { c1 }                              >>
-              <<  { d4  fis a c}      \\     { <g, a >4  <c d > <es fis > <fis a > }      >> 
-              <<  { e 1 }                \\     { < g b>1 }                                               >> 
-            <<   {   }                     \\      { <f f'>8  e' d c b as g f }    >>
-            <<  {   es'2.es4 }          \\     { es,2. es4 }      >>           
-           <<  {  es'  g, as a  }      \\     { es }      >>
-           <<  { d'2  f,4 fis }         \\     { f2 gis,2 }      >> 
-           <<  {  g'2. fis8 g  }      \\     { bes,2 d2 }      >>
-           <<  { c'4 c8 c c4 c8 c}      \\     {<c, e>2  <des f>2 }      >>
-           <<  {  c'4 e, f fis  }      \\     { <dis fis>4 d des c }      >>
-           <<  { b'1  }      \\     { e, 1 }      >>
-           <<  {   }      \\     {   e'8 c b a as ges  f es}      >>
-           <<  { d4 d2 d4  }      \\     { b2 a }      >>
-            <<  { d4 f bes d   }      \\     { as,2 <des ges >}      >>      
-             <<  { d'2 c4. b8  }      \\     { }      >>    
-              <<  { c1  }      \\     {  }      >>
-              <<  {  d,4 d2d4  }      \\     {  }      >>
-              <<  {   d4 fis a c }      \\     {  }      >>
-              <<  {   b1 }      \\     {  }      >>   
-               <<  { r1  }      \\     {  }      >>
-               <<  {  e4 e2 e4 }      \\     {  }      >>
-               <<  {e a, b c   }      \\     {  }      >>
+              << { d4  d2 d4 }             \\     { b2 a}                               >> 
+              << { d4 f bes d }             \\    { as,2 <des ges>2 }           >>
+               << { d'2 c4. b8 }            \\    { <f g>2~ g2}                    >>     
+              << {  c1  }                       \\   { g2. f8 es }                           >>             
+              <<  {  d4 d2 d4 }            \\     { c1 }                              >>
+              <<  { d4  fis a c}              \\     { <g, a >4  <c d > <es fis > <fis a > }      >> 
+              <<  { e 1 }                       \\     { < g b>1 }                                               >> 
+              <<  {   }                          \\      { <f f'>8  e' d c b as g f }    >>
+              <<  {   es'2.es4 }             \\     { es,2. es4 }      >>           
+              <<  {  es'  g, as a  }         \\     { es }      >>
+              <<  { d'2  f,4 fis }           \\     { f2 gis,2 }      >> 
+              <<  {  g'2. fis8 g  }         \\     { bes,2 d2 }      >>
+              <<  { c'4 c8 c c4 c8 c}    \\     {<c, e>2  <des f>2 }      >>
+              <<  {  c'4 e, f fis  }         \\     { <dis fis>4 d des c }      >>
+              <<  { b'1  }                    \\     { <b, e>4 c des d }      >>
+              <<  {   }                        \\     {   e'8 c b a as ges  f es}      >>
+              <<  { d4 d2 d4  }          \\     { b2 a }      >>
+              <<  { d4 f bes d   }        \\     { as,2 <des ges >}      >>      
+              <<  { d'2 c4. b8  }         \\     { <f g>2~ g2 }      >>    
+              <<  { c1  }                    \\     {  }      >>
+              <<  {  d,4 d2d4  }        \\     {  }      >>
+              <<  {   d4 fis a c }        \\     {  }      >>
+              <<  {   b1 }                  \\     {  }      >>   
+              <<  {   }                    \\     { f'8 es e c as a f d }      >>
+              <<  {  e'4 e2 e4 }          \\     {  }      >>
+               <<  {e a, b c   }           \\     {  }      >>
                <<  { d2. fis,8 g   }      \\     {  }      >>  
                <<  {  a1 }      \\     {  }      >>
                <<  { d,4 d2 d4  }      \\     {  }      >>
@@ -128,7 +128,7 @@ pianoLH =
   \relative c
   {
     <g fis'>2 <fis e'> f  < bes as'>
-    es,4 < bes'' f'>4 <a d>4. <as d>8
+    es,4 < bes'' f'>4 <a e'>2
     <as es'>2  <e, d'>
     <a e' g>2 <bes f' as> 
     <c e>4 <fis a> <a c><c es> 
@@ -137,7 +137,7 @@ pianoLH =
          \\
          {  b2~ b8 g fis e}
     >>
-    d,4 <as'' c> g,8 f' es d 
+    d4 <as' c> g8 f es d 
     c8 g' c c, bes g' c bes, 
     a f' e es d des c b 
     
@@ -147,9 +147,15 @@ pianoLH =
     
     <g, fis'> <a g'> <bes as'> <b a'>
     <b' c e>2  <fis c' f>
-    fis4 g, e' fis,
-    es' f, <bes as'>2
-    
+    fis4 g,  <fis e'>2
+    es'4 f, <bes as'>2
+    es,4 < bes'' f'>4 <a e'>2
+    <as es'>2  <e, d'>
+    <a e' g>2 <bes f' as> 
+    <c e>4 <fis a> <a c><c es> 
+    <<    {  d1 }           \\     {  b2~ b8 g fis e}    >>
+    d4 <fis c'> g8 fis e d 
+ 
 
 
 
