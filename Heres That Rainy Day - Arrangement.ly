@@ -51,8 +51,8 @@ melody =
      
      \relative c'
        {       %     VOICE 1                      VOICE 2
-              << { d4  d2 d4 }             \\     { b2 a}                               >> 
-              << { d4 f bes d }             \\    { as,2 <des ges>2 }           >>
+              << { d4  d2 d4 }             \\     { b4 bes  a <ges as>}                               >> 
+              << { d'4 f bes d }             \\    { as,2 <d ges>2 }           >>
                << { d'2 c4. b8 }            \\    { <f g>2~ g2}                    >>     
               << {  c1  }                       \\   { g2. f8 es }                           >>             
               <<  {  d4 d2 d4 }            \\     { c1 }                              >>
@@ -66,7 +66,7 @@ melody =
               <<  { c'4 c8 c c4 c8 c}    \\     {<c, e>2  <des f>2 }      >>
               <<  {  c'4 e, f fis  }         \\     { <dis fis>4 d des c }      >>
               <<  { b'1  }                    \\     { <b, e>4 c des d }      >>
-              <<  {   }                        \\     {   <e e'>8 c' <d, b'> a' <des, as'> ges  <b, f'> es}      >>
+              <<  {   }                        \\     {   <e e'>8 c' <d, b'> a' <des, as'> ges  <c, f> es}      >>
               <<  { d4 d2 d4  }          \\     { b2 a }      >>
               <<  { d4 f bes d   }        \\     { as,2 <des ges >}      >>      
               <<  { d'2 c4. b8  }         \\     { <f g>2~ g2 }      >>    
@@ -82,7 +82,7 @@ melody =
                <<  { d,4 d2 d4  }      \\     {  }      >>
                <<  {  d fis a b }      \\     {  }      >>
                <<  {  g1  }      \\     {  }      >>
-               <<  { r1  }      \\     {  }      >> ges' <des,, d e f>
+               <<  { r1  }      \\     {  }      >> 
 }		% end of PianoRH
 
 pianoLH = 
@@ -90,7 +90,10 @@ pianoLH =
   
   \relative c
   {
-    <g fis'>2 <fis e'> f  < bes as'>
+        %     VOICE 1                      VOICE 2
+        << {  fis4 f e   d }    \\    {  g,2 fis4 e       }     >>
+        
+     f2  < bes as'>
     es,4 < bes'' f'>4 <a e'>2
     <as es'>2  <e, d'>
     <a e' g>2 <bes f' as> 
@@ -102,10 +105,10 @@ pianoLH =
     
     <bes a'>2 <e, d'>
     <es d'>2 <b' a'>4 <bes as'>  
-    <a g'>2 <bes as'>  <b a'>4 <e fis> <es bes'> <d a'>
+    <a g'>2 <bes as'>  <b a'>4 <e b'> <es bes'> <d a'>
     
     <g, fis'> <a g'> <bes as'> <b a'>
-    <c b'>4 <b a'> <bes as'> <as ges'>
+    <c b'>4 <b a'> <bes as'> <a g'>
     
     fis'4 g,  <fis e'>2
     es'4 f, <bes as'>2
@@ -153,7 +156,7 @@ scoreSection =
          <<
               \new ChordNames \baseChords
        
-           \new Staff }
+           \new Staff 
            {
                   \tempo 4=100
                   \key g \major		
