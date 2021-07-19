@@ -31,7 +31,8 @@ mdecks = \chordmode {
 }
 %}
 baseChords = \chordmode {
-              g2:maj7 fis:min6 f:m6 bes:7.5+.9+ 
+              g4:maj7 fis:min6 f:min7 e:7.5-
+              es:9 bes:7.5+.9+ 
               es1:maj7 aes:maj7
               a:min7.11 
               a4:min7 d:7 a2:dim7
@@ -51,7 +52,7 @@ melody =
      
      \relative c'
        {       %     VOICE 1                      VOICE 2
-              << { d4  d2 d4 }             \\     { b4 bes  a <ges as>}                               >> 
+              << { d4  d2 d4 }             \\     { b8 bes  a4 as <ges as>}      >> 
               << { d'4 f bes d }             \\    { as,2 <d ges>2 }           >>
                << { d'2 c4. b8 }            \\    { <f g>2~ g2}                    >>     
               << {  c1  }                       \\   { g2. f8 es }                           >>             
@@ -91,9 +92,9 @@ pianoLH =
   \relative c
   {
         %     VOICE 1                      VOICE 2
-        << {  fis4 f e   d }    \\    {  g,2 fis4 e       }     >>
+        << {  fis8 f e4 es   d }    \\    {  g,4 fis f e       }     >>
         
-     f2  < bes as'>
+     es  < bes' as'>
     es,4 < bes'' f'>4 <a e'>2
     <as es'>2  <e, d'>
     <a e' g>2 <bes f' as> 
