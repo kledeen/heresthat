@@ -247,6 +247,11 @@ walkingBass = \relative c {
      es g a e' as, es' c g8 as
      a4 g fis e
      d d'8 a fis4 d
+     g fis e es d as' g b
+     c bes a g f a c b
+     bes as g e
+     es g bes a
+     
      
      
 }
