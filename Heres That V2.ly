@@ -150,23 +150,24 @@ simpleRH =   \relative c' {
           << { c4 c8 c c4 c8 c  }  \\  { <c, f>2 <des ges>  }  >>
           << {  c'4 e, f fis }  \\  { dis4 d des c  }  >>
           << {   b'1}  \\  { b,4 c des d }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
+          << {   }  \\  {  e'8 c b a g e fis es }  >>
+          \bar "||"
+          << { d4 d2 d4  }  \\  { b2 b4 c }  >>
+          << { d4 f bes d  }  \\  { c,4 <c d> <c es g>4  <e gis b>}  >>
+          << { d'2 c4. b8  }  \\  { es,2 f }  >>
+          << {  c'1 }  \\  { r4 <des, f> <des e>2 }  >>
+          << { d4 d2 d4  }  \\  { a2 bes  }  >>
+          << { d4 fis a c  }  \\  { b,4 <d e> <d fis> es  }  >>
+          << {  b'2. c8 cis}  \\  { d,4 es e2  }  >>
+          << { d'8 e f fis g as  b d  }  \\  { r4 < e,, f a> r <f b e> }  >>
+          << {  <e' g  c e>4 <e g  c e>2 <e  g  c e>4 }  \\  { b'4 b2 b8 bes  }  >>
+          << {  <e, g a c e>4 <a, c e g a > <b d f as b> < c e g a c>}  \\  {  }  >>
+          << { <fis a b d>2 fis,4 g  }  \\  { d'8 b a g  }  >>
+          << { a'1  }  \\  {  \tuplet 3/2 { des,4 d es } e2 }  >>
+          << { d4 d2 d4  }  \\  { a1  }  >>
+          << { d4 fis a b  }  \\  { a,2 cis4 c  }  >>
+          << { g'1  }  \\  { b,1  }  >>
+          << {  r1 }  \\  {   }  >>
      }
 simpleLH =   \relative c {
           << { fis2 f4 e  }  \\  { g,2. fis4  }  >>
@@ -184,23 +185,23 @@ simpleLH =   \relative c {
           << { g'2 as2  }  \\  { a,2 bes  }  >>
           << { a'4 b bes a }  \\  { b,4 e es d }  >>
           << { fis4 g as a  }  \\  { g,4 a bes b  }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
-          << {   }  \\  {   }  >>
+          << { b'2 <fis a> }  \\  { c1  }  >>
+          << {  fis2 ges4 g  }  \\  {g,2 as4 a }  >>
+          << { as'8 f es d as'2}  \\  { bes,2   bes2 }  >>
+          << { g'2 <fis c'> }  \\  { a,2 d }  >>
+          << { r4 bes'4~ bes2    }  \\  { g,2 c }  >>
+          << { fis2 g  }  \\  {b,2 c  }  >>
+          << {  a'4 bes  a4 as }  \\  { d,8 des c b bes a ges as}  >>
+          << { fis'1 }  \\  {g,1   }  >>
+          << {  }  \\  { d4 r  g r }  >>
+          << {  r1 }  \\  {  }  >>
+          << { r1 }  \\  {  }  >>
+          << { r1  }  \\  {  }  >>
+          << { g'1 }  \\  {a,2 bes    }  >>
+          << {g'2 fis4 g  }  \\  {  d1 }  >>
+          << { fis1  }  \\  {  d8 des c b bes a f fis }  >>
+          << {  r1 }  \\  { g2 e  }  >>
+          << {  r1 }  \\  { a2 d,  }  >>
      }
 %{
 %++++++++++++++++++++++++++++++++
@@ -241,22 +242,29 @@ roots =  \relative c {
           b2 e, a bes a a d, d g e a d,
      }
      
-
+walkingBass = \relative c {
+     g4 g d' fis, f c' bes e, 
+     es g a e' as, es' c g8 as
+     a4 g fis e
+     d d'8 a fis4 d
+     
+     
+}
 
 %============SCORE================
 \score {
   \new StaffGroup 
   <<
-   %   \new Staff = "leadstaff"
-%      {
-%           \key g \major
-%       \lead
-%           \addlyrics \with { alignAboveContext = "leadstaff" }\heresLyrics
-%           \bar "|."
-%           \break
-%           \lead
-%                
-%      }
+     \new Staff = "leadstaff"
+     {
+          \key g \major
+      \lead
+          \addlyrics \with { alignAboveContext = "leadstaff" }\heresLyrics
+          \bar "|."
+          \break
+  %         \lead
+               
+     }
          \new PianoStaff 
          <<
       %         \new ChordNames \baseChords
@@ -265,37 +273,37 @@ roots =  \relative c {
            {
                   \tempo 4=90
                   \key g \major		
-% melody and bass
+% % melody and bass
 ^"Melody and Bass"
                     \lead
                  \bar "|."
                  \break
- % melody + alto and bass
- ^"Melody, Alto, Bass"
-           << {  \lead }  \\  { \alto  }  >>
-                 \break
-                 \bar "|."
-                 \break
+%  % melody + alto and bass
+%  ^"Melody, Alto, Bass"
+%            << {  \lead }  \\  { \alto  }  >>
+%                  \break
+%                  \bar "|."
+%                  \pageBreak
                  ^"Simple Arrangement"
                  \simpleRH
                  \bar "|."
-                 \break
+           %{       \pageBreak
                  ^"Complicated Arrangement"
                  \melody
-       
+       %} 
            }  % end of treble staff
 
            \new Staff 
            {
                   \key g \major
                   \clef "bass"
-                   \roots
-                   \roots
+                    \walkingBass
+%                    \roots
                 
                   \simpleLH
-                    \pianoLH
+            %{         \pianoLH
                   \break
-                 
+               %}   
                   
            } % end of bass staff
       >>
