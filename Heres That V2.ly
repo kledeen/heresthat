@@ -30,8 +30,10 @@ mdecks = \chordmode {
 }
 %}
 baseChords = \chordmode {
-              g4:maj7 fis:min6 f:min7 e:7.5-
-              es2:9 bes:7.5+.9+ 
+             g1:maj7
+             f2:min7 bes:7
+             %g4:maj7 fis:min6 f:min7 e:7.5-
+             %es2:9 bes:7.5+.9+ 
               es2:maj7 a:min7 aes1:maj7
               a:min7.11 
               a4:min7 d:7 a2:dim7
@@ -158,10 +160,10 @@ simpleRH =   \relative c' {
           << {  c'1 }  \\  { r4 <des, f> <des e>2 }  >>
           << { d4 d2 d4  }  \\  { a2 bes  }  >>
           << { d4 fis a c  }  \\  { b,4 <d e> <d fis> es  }  >>
-          << {  b'2. c8 cis}  \\  { d,4 es e2  }  >>
+          << {  b'2. c,8 cis}  \\  { d,4 es e2  }  >>
           << { d'8 e f fis g as  b d  }  \\  { r4 < e,, f a> r <f b e> }  >>
           << {  <e' g  c e>4 <e g  c e>2 <e  g  c e>4 }  \\  { b'4 b2 b8 bes  }  >>
-          << {  <e, g a c e>4 <a, c e g a > <b d f as b> < c e g a c>}  \\  {  }  >>
+          << {  e4 a, b c}  \\  { <g a> f fis e }  >>
           << { <fis a b d>2 fis,4 g  }  \\  { d'8 b a g  }  >>
           << { a'1  }  \\  {  \tuplet 3/2 { des,4 d es } e2 }  >>
           << { d4 d2 d4  }  \\  { a1  }  >>
@@ -195,7 +197,7 @@ simpleLH =   \relative c {
           << { fis'1 }  \\  {g,1   }  >>
           << {  }  \\  { d4 r  g r }  >>
           << {  r1 }  \\  {  }  >>
-          << { r1 }  \\  {  }  >>
+          << { <c e>4 <bes des> <a c> <g bes> }  \\  {f4 es d c  }  >>
           << { r1  }  \\  {  }  >>
           << { g'1 }  \\  {a,2 bes    }  >>
           << {g'2 fis4 g  }  \\  {  d1 }  >>
@@ -249,10 +251,15 @@ walkingBass = \relative c {
      d d'8 a fis4 d
      g fis e es d as' g b
      c bes a g f a c b
-     bes as g e
-     es g bes a
-     
-     
+     bes a g e
+     es g c bes 
+     a
+     es es
+     r 
+      e4' c b a 
+     g4 f e bes' a es d fis
+     r1 r r r r r r
+     r r r r r r r r r r r
      
 }
 
@@ -272,9 +279,10 @@ walkingBass = \relative c {
      }
          \new PianoStaff 
          <<
-      %         \new ChordNames \baseChords
+              \new ChordNames \baseChords
        
-           \new Staff 
+         
+         \new Staff 
            {
                   \tempo 4=90
                   \key g \major		
