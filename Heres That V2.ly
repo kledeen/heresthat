@@ -29,6 +29,28 @@ mdecks = \chordmode {
       
 }
 %}
+leadSheetChords = \chordmode {
+              g1:maj7 bes:7
+              es:maj7 as:maj7
+              a:min7 d:7
+              g:maj7 d2:min7 g:7.9+
+              c1:min7 f:7
+              bes:maj7 ees:maj7
+              a:min7 d:7 
+              g2:maj7 e:min7 a:min7 d:7
+              g1:maj7 bes:7
+              es:maj7 as:maj7
+              a:min7 d:7
+              g:maj7 d2:min7 g:7
+              c1:maj7 a2:min7 d:13
+              b:min7 e:min7
+              a2:7  bes:dim
+              a1:min7 d:7
+              g2:6 e:min7 a:min7 d:7
+              
+
+             }
+
 baseChords = \chordmode {
              g1:maj7
              f2:min7 bes:7
@@ -97,6 +119,62 @@ melody =    \relative c'  {       %     VOICE 1                      VOICE 2
                <<  {  g1  }      \\     {  }      >>
                <<  { r1  }      \\     {  }      >> 
 }		% end of PianoRH
+comping = \relative c'{
+  
+  < fis, a b d>1    % Gmaj7
+  <as c d g>       %Bb7
+  <g bes d f>     % Eb maj7
+  <g bes c es>    % Ab
+  
+  <g b c e>         % A min7
+  < fis  b c e>     % D7
+  <fis a b d>    % G maj 7
+  
+  <f a c e> 2
+  <f a b e>
+  
+  < bes d es g>1    % C min7   measure 9
+  < a d es g>     % F7
+  <a c d f >     %Bb maj 7
+  <g bes d f>    %Eb msj 7   measure 12
+  
+  <g b c e>  %A min7   Measure 13
+  <fis b c e>   %D7
+  <fis a b d>2    % G maj 7
+  <g b d fis>   %E min 7
+  <g b c e>   %A-7
+  <fis b c e>   %D7
+  
+  < fis a b d>1    % Gmaj7 measure 17
+  <as c d g>       %Bb7
+  <g bes d f>     % Eb maj7
+  <g bes c es>    % Ab
+  
+   <g b c e>         % A min7    Measure 21
+  < fis  b c e>     % D7
+  <fis a b d>    % G maj 7
+  
+  <f a c e> 2     %D-7
+  <f a b e>        %G7
+  
+  
+  <g b d e>1    %C maj7   Measure 25
+  <g b c e>2         % A min7  
+  < fis  b c e>     % D7 
+  <a cis d fis>2   %B-7
+  <g b d fis>
+  <g b cis fis>    %A7
+  <g bes cis e>    %Bb dim
+  
+     <g b c e>1         % A min7    Measure 29
+  < fis  b c e>     % D7
+  <fis a b d>2    % G maj 7
+  <g b d fis>   %E min 7
+  <g b c e>   %A-7
+  <fis b c e>   %D7  
+  
+}
+
 pianoLH =  \relative c  {
         %     VOICE 1                      VOICE 2
         << {  fis8^"complex lh" f e4 es   d~ }    \\    {  g,4 fis f e       }     >>
@@ -160,16 +238,16 @@ simpleRH =   \relative c' {
           << {  c'1 }  \\  { r4 <des, f> <des e>2 }  >>
           << { d4 d2 d4  }  \\  { a2 bes  }  >>
           << { d4 fis a c  }  \\  { b,4 <d e> <d fis> es  }  >>
-          << {  b'2. c,8 cis}  \\  { d,4 es e2  }  >>
-          << { d'8 e f fis g as  b d  }  \\  { r4 < e,, f a> r <f b e> }  >>
-          << {  <e' g  c e>4 <e g  c e>2 <e  g  c e>4 }  \\  { b'4 b2 b8 bes  }  >>
-          << {  e4 a, b c}  \\  { <g a> f fis e }  >>
-          << { <fis a b d>2 fis,4 g  }  \\  { d'8 b a g  }  >>
-          << { a'1  }  \\  {  \tuplet 3/2 { des,4 d es } e2 }  >>
-          << { d4 d2 d4  }  \\  { a1  }  >>
-          << { d4 fis a b  }  \\  { a,2 cis4 c  }  >>
-          << { g'1  }  \\  { b,1  }  >>
-          << {  r1 }  \\  {   }  >>
+          << {  b'2. c,8 cis}  \\  { d4 es e2  }  >>
+          << { d8 e f fis g as  b d  }  \\  { }  >>
+          << {  <g,  c e>4 < g  c e>2 < g  c e>4 }  \\  {  }  >>
+          << {  e'4 a, b c}  \\  { <g a> f fis f }  >>
+          << { d'2 fis,4 g  }  \\  { a2 d,  }  >>
+          << { a'2. g4  }  \\  {  e2 r  }  >>
+          << { d4 d2 d4  }  \\  { a2 b4 gis  }  >>
+          << { d'4 fis a b  }  \\  { a,2 cis4 c  }  >>
+          << { g'1~  }  \\  { <as,~ c>4 <as d> <bes cis> c }  >>
+          << { g'1}  \\  {  <b, d>1 }  >>
      }
 simpleLH =   \relative c {
           << { fis2 f4 e  }  \\  { g,2. fis4  }  >>
@@ -195,15 +273,15 @@ simpleLH =   \relative c {
           << { fis2 g  }  \\  {b,2 c  }  >>
           << {  a'4 bes  a4 as }  \\  { d,8 des c b bes a ges as}  >>
           << { fis'1 }  \\  {g,1   }  >>
-          << {  }  \\  { d4 r  g r }  >>
-          << {  r1 }  \\  {  }  >>
-          << { <c e>4 <bes des> <a c> <g bes> }  \\  {f4 es d c  }  >>
-          << { r1  }  \\  {  }  >>
-          << { g'1 }  \\  {a,2 bes    }  >>
-          << {g'2 fis4 g  }  \\  {  d1 }  >>
-          << { fis1  }  \\  {  d8 des c b bes a f fis }  >>
-          << {  r1 }  \\  { g2 e  }  >>
-          << {  r1 }  \\  { a2 d,  }  >>
+          << { r4 < e' f a> r <f b e>  }  \\  { d,4 r  g r }  >>
+          << { e''4 e2 e4  }  \\  {  c4 b a8 as g ges}  >>
+          << { <c e>4 <bes des> <a c> <as es'> }  \\  {f4 es d des8 c  }  >>
+          << { <a' e>2 bes  }  \\  { b,2 e }  >>
+          << { b'2 bes }  \\  {<cis, g'>1    }  >>
+          << {e2 d  }  \\  {  b4 a gis e }  >>
+          << { fis1  }  \\  {  d'8 des c b bes a g fis }  >>
+          << {  es'4 f  g ges}  \\  { f,4 bes  a as}  >>
+          << {  fis'1}  \\  {g,1  }  >>
      }
 %{
 %++++++++++++++++++++++++++++++++
@@ -297,8 +375,7 @@ walkingBass = \relative c {
      }
          \new PianoStaff 
          <<
-              \new ChordNames \baseChords
-       
+              \new ChordNames \leadSheetChords
          
          \new Staff 
            {
@@ -306,21 +383,16 @@ walkingBass = \relative c {
                   \key g \major		
 % % melody and bass
 ^"Melody and Bass"
-                    \lead
+                 \simpleRH
+  %             \lead
                  \bar "|."
                  \break
-%  % melody + alto and bass
-%  ^"Melody, Alto, Bass"
-%            << {  \lead }  \\  { \alto  }  >>
-%                  \break
-%                  \bar "|."
-%                  \pageBreak
+
                  ^"Simple Arrangement"
-                 \simpleRH
+               \lead
+               \bar "||"
+               \lead
                  \bar "|."
-           %{       \pageBreak
-                 ^"Complicated Arrangement"
-                 \melody
        %} 
            }  % end of treble staff
 
@@ -328,13 +400,9 @@ walkingBass = \relative c {
            {
                   \key g \major
                   \clef "bass"
-                    \walkingBass
-%                    \roots
-                
                   \simpleLH
-            %{         \pianoLH
-                  \break
-               %}   
+                  \comping  
+                  \walkingBass
                   
            } % end of bass staff
       >>
