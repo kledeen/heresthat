@@ -130,8 +130,8 @@ comping = \relative c'{
   < fis  b c e>     % D7
   <fis a b d>    % G maj 7
   
-  <f a c e> 2
-  <f a b e>
+  <c' e f a > 2
+  < b ees f as>
   
   < bes d es g>1    % C min7   measure 9
   < a d es g>     % F7
@@ -154,8 +154,8 @@ comping = \relative c'{
   < fis  b c e>     % D7
   <fis a b d>    % G maj 7
   
-  <f a c e> 2     %D-7
-  <f a b e>        %G7
+  <c' e f a > 2
+  < b ees f as>
   
   
   <g b d e>1    %C maj7   Measure 25
