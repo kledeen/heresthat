@@ -46,7 +46,7 @@ leadSheetChords = \chordmode {
               b:min7 e:min7
               a2:7  bes:dim
               a1:min7 d:7
-              g2:6 e:min7 a:min7 d:7
+              f2:min7 e:min7 es:7 d:7
               
 
              }
@@ -238,16 +238,16 @@ simpleRH =   \relative c' {
           << {  c'1 }  \\  { r4 <des, f> <des e>2 }  >>
           << { d4 d2 d4  }  \\  { a2 bes  }  >>
           << { d4 fis a c  }  \\  { b,4 <d e> <d fis> es  }  >>
-          << {  b'2. c,8 cis}  \\  { d4 es e2  }  >>
-          << { d8 e f fis g as  b d  }  \\  { }  >>
+          << {  b'2. c,8 des}  \\  { d4 <c es> <b e> a8 bes  }  >>
+          << { <b d>8 <cis e> <d f>   <e g> <f as> <as b> <b d> <d f>  }  \\  { }  >>
           << {  <g,  c e>4 < g  c e>2 < g  c e>4 }  \\  {  }  >>
           << {  e'4 a, b c}  \\  { <g a> f fis f }  >>
-          << { d'2 fis,4 g  }  \\  { a2 d,  }  >>
-          << { a'2. g4  }  \\  {  e2 r  }  >>
+          << { d'2 fis,4 g  }  \\  { <d g>2 d  }  >>
+          << { b'4 bes a  g4  }  \\  {  e2 r  }  >>
           << { d4 d2 d4  }  \\  { a2 b4 gis  }  >>
-          << { d'4 fis a b  }  \\  { a,2 cis4 c  }  >>
-          << { g'1~  }  \\  { <as,~ c>4 <as d> <bes cis> c }  >>
-          << { g'1}  \\  {  <b, d>1 }  >>
+          << { d'4 fis a b  }  \\  { <a, c>4 <c d> <d fis> <c fis>  }  >>
+          << { g'1~  }  \\  { <as,~ c>2 <as b> }  >>
+          << { g'2 f4 es}  \\  {  <g, bes>2 <fis a> }  >>
      }
 simpleLH =   \relative c {
           << { fis2 f4 e  }  \\  { g,2. fis4  }  >>
@@ -273,15 +273,15 @@ simpleLH =   \relative c {
           << { fis2 g  }  \\  {b,2 c  }  >>
           << {  a'4 bes  a4 as }  \\  { d,8 des c b bes a ges as}  >>
           << { fis'1 }  \\  {g,1   }  >>
-          << { r4 < e' f a> r <f b e>  }  \\  { d,4 r  g r }  >>
+          << { r4 f'4~ f2  }  \\  { d,2   g  }  >>
           << { e''4 e2 e4  }  \\  {  c4 b a8 as g ges}  >>
           << { <c e>4 <bes des> <a c> <as es'> }  \\  {f4 es d des8 c  }  >>
           << { <a' e>2 bes  }  \\  { b,2 e }  >>
-          << { b'2 bes }  \\  {<cis, g'>1    }  >>
+          << { <g b>4 gis8 a <g bes>2}  \\  {<cis, >1    }  >>
           << {e2 d  }  \\  {  b4 a gis e }  >>
-          << { fis1  }  \\  {  d'8 des c b bes a g fis }  >>
-          << {  es'4 f  g ges}  \\  { f,4 bes  a as}  >>
-          << {  fis'1}  \\  {g,1  }  >>
+          << { fis4 r r  d'  }  \\  {  d8 des c b bes a \tuplet 3/2 { as g fis } }  >>
+          << {  es'2 d}  \\  { f,2 e }  >>
+          << {  des' c}  \\  {es, d  }  >>
      }
 %{
 %++++++++++++++++++++++++++++++++
