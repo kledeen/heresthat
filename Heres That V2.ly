@@ -47,9 +47,7 @@ leadSheetChords = \chordmode {
               a2:7  bes:dim
               a1:min7 d:7
               g2:6 e:min7 a:min7 d:7
-              
-
-             }
+          }
 
 baseChords = \chordmode {
              g1:maj7
@@ -57,19 +55,37 @@ baseChords = \chordmode {
              %g4:maj7 fis:min6 f:min7 e:7.5-
              %es2:9 bes:7.5+.9+ 
               es2:maj7 a:min7 aes1:maj7
-              a:min7.11 
+              a2:min7.11  bes:9
               a4:min7 d:7 a2:dim7
-              g1:maj7 d2:min7.5- g:7.9-
-              c1:min7 c2:min7 f4:9+ f:7 bes2:maj7 e:9 ees1:maj7
-              a:min7 a2:min7 es4:9 d:7 g2:maj7 e:min7 a:min7 d:7
+              g1:maj7 d2:min7 g:7.9-
+              c:min7  c:min7/bes
+              c2:min7  b:7 
+              bes2:maj7 e:9 ees1:maj7
+              a2:min7 bes:min7.13-
+              b4:7.9- e:min7 es:9 d:7
+              g:maj 7 a:min7 bes:min7 g:7
+              a2:min7 aes:7
+              g2:maj7 as4:min7 a:min7
+              
+              bes4:7  bes:9 c:min7/bes e/bes
+              a2:min7 d:7
+              g:min7.5- c:7.9-
+              b2:min7 c:9
+              
+              d4:6 c:11 d/bes aes:7
 
               g2:maj7 e:min7
-              f:min7 bes:7 
-              ees1:maj7 aes:maj7
-              a:min7.11 d:7 as2:min7 des:7 d2:min7 g:7
-              c1:maj7 a2:min7 d4:13 c:13  b2:min7 e:min7 a:13 bes:dim7
               
-              a1:min7.11  d:7 g2:6 e:min7 a:min7 d:7
+              d2:min7 g:7
+              c2:maj7 a2:min7 
+              f4:maj9 es:9 d:13 des:maj7
+              d2:6.9 c:7  
+              a:9 bes:dim7
+              
+              a2:min7.11  e:7
+              d:7 g2:6 
+              f4:min7  e:min7 es:7 d:7
+              g1:maj7
 }
 lead =  \relative c'    {
                d4 d2 d4 d f bes d
@@ -85,40 +101,42 @@ lead =  \relative c'    {
                e4 e2 e4 e a, b c d2 fis,4 g a1 d,4 d2 d4 d fis a b g1
                r1
           }
-melody =    \relative c'  {       %     VOICE 1                      VOICE 2
-              << { d4  d2 d4 }             \\     { b8 bes  a4 as <ges as>}      >> 
-              << { d'4 f bes d }             \\    { g,,8 c~ c4  g'8 ges g4 }           >>
-               << { d'2 c4. b8 }            \\    { f2  g2}                    >>     
-              << {  c1 }                       \\   { g4 fis  f es }                           >>             
-              <<  {  d4 d2 d4 }            \\     { c1 }                              >>
-              <<  { d4  fis a c}              \\     { <a,  >4  <c  > <e > <fis  > }      >> 
-              <<  { <b> 1 }                       \\     {  d,4 es e2 }                                               >> 
-              <<  {  }                          \\      { <f f'>8  e' <f, d'> c' b as g f }    >>
-              <<  {   es'2.es4 }             \\     { es,2. es4 }      >>           
-              <<  {  es'  g, as a  }         \\     { es }      >>
-              <<  { d'2.  f,8 fis }           \\     { f2. gis,4 }      >> 
-              <<  {  g'2. fis8 g  }         \\     { bes,4 c d2 }      >>
-              <<  { c'4 c8 c c4 c8 c}    \\     {<c, e>2  <des f>2 }      >>
-              <<  {  c'4 e, f fis  }         \\     { <dis fis>4 d des c }      >>
-              <<  { b'1  }                    \\     { <b, e>4 c des d }      >>
-              <<  {   }                        \\     {   <e e'>8 c' <d, b'> a' <des, as'> ges  <c, f> es}      >>
-              <<  { d4^"Swing" d2 d4  }          \\     { b4 b bes  a  }      >>
-              <<  { d4 f bes d   }        \\     { as,4 d <es g>4 <d ges>4  }      >>      
-              <<  { d'2 c4. b8  }         \\     { <f g>2~ g2 }      >>    
-              <<  { c1  }                    \\     {  }      >>
-              <<  {  d,4 d2d4  }        \\     {  }      >>
-              <<  {   d4 fis a c }        \\     {  }      >>
-              <<  {   b1 }                  \\     {  }      >>   
-              <<  {   }                    \\     { r8  f g as <g bes> <as b> <bes des> <b d>}      >>
-              <<  {  e4 e2 e4 }          \\     {  }      >>
-               <<  {e a, b c   }           \\     {  }      >>
-               <<  { d2. fis,8 g   }      \\     {  }      >>  
-               <<  {  a1 }      \\     {  }      >>
-               <<  { d,4 d2 d4  }      \\     {  }      >>
-               <<  {  d fis a b }      \\     {  }      >>
-               <<  {  g1  }      \\     {  }      >>
-               <<  { r1  }      \\     {  }      >> 
-}		% end of PianoRH
+% melody =    \relative c'  {       %     VOICE 1                      VOICE 2
+%               << { d4  d2 d4 }             \\     { b8 bes  a4 as <ges as>}      >> 
+%               << { d'4 f bes d }             \\    { g,,8 c~ c4  g'8 ges g4 }           >>
+%                << { d'2 c4. b8 }            \\    { f2  g2}                    >>     
+%               << {  c1 }                       \\   { g4 fis  f es }                           >>             
+%               <<  {  d4 d2 d4 }            \\     { c1 }                              >>
+%               <<  { d4  fis a c}              \\     { <a,  >4  <c  > <e > <fis  > }      >> 
+%               <<  { <b> 1 }                       \\     {  d,4 es e2 }                                               >> 
+%               <<  {  }                          \\      { <f f'>8  e' <f, d'> c' b as g f }    >>
+%               <<  {   es'2.es4 }             \\     { es,2. es4 }      >>           
+%               <<  {  es'  g, as a  }         \\     { es }      >>
+%               <<  { d'2.  f,8 fis }           \\     { f2. gis,4 }      >> 
+%               <<  {  g'2. fis8 g  }         \\     { bes,4 c d2 }      >>
+%               <<  { c'4 c8 c c4 c8 c}    \\     {<c, e>2  <des f>2 }      >>
+%               <<  {  c'4 e, f fis  }         \\     { <dis fis>4 d des c }      >>
+%               <<  { b'1  }                    \\     { <b, e>4 c des d }      >>
+%               <<  {   }                        \\     {   <e e'>8 c' <d, b'> a' <des, as'> ges  <c, f> es}      >>
+%               <<  { d4^"Swing" d2 d4  }          \\     { b4 b bes  a  }      >>
+%               <<  { d4 f bes d   }        \\     { as,4 d <es g>4 <d ges>4  }      >>      
+%               <<  { d'2 c4. b8  }         \\     { <f g>2~ g2 }      >>    
+%               <<  { c1  }                    \\     {  }      >>
+%               <<  {  d,4 d2d4  }        \\     {  }      >>
+%               <<  {   d4 fis a c }        \\     {  }      >>
+%               <<  {   b1 }                  \\     {  }      >>   
+%               <<  {   }                    \\     { r8  f g as <g bes> <as b> <bes des> <b d>}      >>
+%               <<  {  e4 e2 e4 }          \\     {  }      >>
+%                <<  {e a, b c   }           \\     {  }      >>
+%                <<  { d2. fis,8 g   }      \\     {  }      >>  
+%                <<  {  a1 }      \\     {  }      >>
+%                <<  { d,4 d2 d4  }      \\     {  }      >>
+%                <<  {  d fis a b }      \\     {  }      >>
+%                <<  {  g1  }      \\     {  }      >>
+%                <<  { r1  }      \\     {  }      >> 
+% }		% end of PianoRH
+
+\include "HeresThatRainyDayMelody.ly"
 comping = \relative c'{
   
   < fis, a b d>1    % Gmaj7
@@ -143,7 +161,7 @@ comping = \relative c'{
   <fis a b d>2    % G maj 7
   <g b d fis>   %E min 7
   <g b c e>   %A-7
-  <fis b c e>   %D7
+  <fis bes c es >   %D7
   
   < fis a b d>1    % Gmaj7 measure 17
   <as c d g>       %Bb7
@@ -237,16 +255,16 @@ simpleRH =   \relative c' {
           << { d'2 c4. b8  }  \\  { es,2 f }  >>
           << {  c'1 }  \\  { r4 <des, f> <des e>2 }  >>
           << { d4 d2 d4  }  \\  { a2 bes  }  >>
-          << { d4 fis a c  }  \\  { b,4 <d e> <d fis> es  }  >>
-          << {  b'2. c,8 cis}  \\  { d4 es e2  }  >>
-          << { d8 e f fis g as  b d  }  \\  { }  >>
+          << { d4 fis a c  }  \\  { <a, b>4 <c d > <d fis> es  }  >>
+          << {  b'2. c,8 cis}  \\  { d4 <c es> <b e>4  }  >>
+          << { <b d>8 <c e> <d f> <e g>  <f as> <as b> < b d> < d f>  }  \\  { }  >>
           << {  <g,  c e>4 < g  c e>2 < g  c e>4 }  \\  {  }  >>
           << {  e'4 a, b c}  \\  { <g a> f fis f }  >>
           << { d'2 fis,4 g  }  \\  { a2 d,  }  >>
           << { a'2. g4  }  \\  {  e2 r  }  >>
           << { d4 d2 d4  }  \\  { a2 b4 gis  }  >>
           << { d'4 fis a b  }  \\  { a,2 cis4 c  }  >>
-          << { g'1~  }  \\  { <as,~ c>4 <as d> <bes cis> c }  >>
+          << { g'1~  }  \\  { <as, c>4 <gis b> <g bes > <fis a> }  >>
           << { g'1}  \\  {  <b, d>1 }  >>
      }
 simpleLH =   \relative c {
@@ -280,7 +298,7 @@ simpleLH =   \relative c {
           << { b'2 bes }  \\  {<cis, g'>1    }  >>
           << {e2 d  }  \\  {  b4 a gis e }  >>
           << { fis1  }  \\  {  d'8 des c b bes a g fis }  >>
-          << {  es'4 f  g ges}  \\  { f,4 bes  a as}  >>
+          << {  es'4 d  des c}  \\  { f,4 e  es d}  >>
           << {  fis'1}  \\  {g,1  }  >>
      }
 %{
@@ -313,6 +331,16 @@ alto = \relative c' {
      e8 d es fis
      e2 es d1
      
+}
+
+slashBass = {
+      \relative c{
+                  \override NoteHead.style = #'slash
+            \hide Stem
+            \repeat unfold 32 { 
+                  c4 c c c  
+      }
+}
 }
 roots =  \relative c {
           g2 fis f bes es, a as as a a d d g, g d' g, c c f, fis4 f
@@ -375,22 +403,27 @@ walkingBass = \relative c {
      }
          \new PianoStaff 
          <<
-              \new ChordNames \leadSheetChords
+              \new ChordNames { \baseChords \leadSheetChords \leadSheetChords}
          
          \new Staff 
            {
                   \tempo 4=90
                   \key g \major		
 % % melody and bass
+
 ^"Melody and Bass"
                  \simpleRH
   %             \lead
                  \bar "|."
-                 \break
+                 \pageBreak
 
                  ^"Simple Arrangement"
+  
                \lead
                \bar "||"
+               \pageBreak
+        
+               ^"Here's That Rainy Day - Lead Sheet"
                \lead
                  \bar "|."
        %} 
@@ -402,7 +435,8 @@ walkingBass = \relative c {
                   \clef "bass"
                   \simpleLH
                   \comping  
-                  \walkingBass
+                        \slashBass
+%                  \walkingBass
                   
            } % end of bass staff
       >>
